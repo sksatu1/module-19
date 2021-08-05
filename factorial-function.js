@@ -7,15 +7,31 @@
 
 
 
-// factorial by using function
+// factorial by using function and for loop
 
-function factorial(number) {
-    let fact = 1;
-    for (i = 1; i <= number; i++) {
-        fact = fact * i;
+// function factorial(number) {
+//     let fact = 1;
+//     for (i = 1; i <= number; i++) {
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+
+// var firstFactorial = factorial(7);
+// console.log("my factorial value =", firstFactorial);
+
+
+
+
+// using while loop 
+function Fact(value) {
+    let Fact = 1;
+    let i = 1;
+    while (i <= value) {
+        Fact = Fact * i;
+        i++;
     }
-    return fact;
+    return Fact;
 }
-
-var firstFactorial = factorial(7);
-console.log("my factorial value =", firstFactorial);
+let myAns = Fact(7);
+console.log('my factorial value =', myAns);
